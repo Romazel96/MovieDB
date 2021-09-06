@@ -8,15 +8,6 @@ const main = document.querySelector('.movie-section')
 
 getMovies(apiUrl)
 
-// async function getMovies(url) {
-//   let nameMovie = document.querySelector('.input').value
-//   document.querySelector('.btn_search')
-//     const response = await fetch(`${url} + ${nameMovie}`)
-//     const data = await response.json().then(data => {
-// //    showMovies(data.results)
-// })
-// }
-
 async function getMovies(url){
   const response = await fetch(url)
   const data = await  response.json()
