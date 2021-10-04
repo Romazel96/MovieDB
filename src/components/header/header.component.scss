@@ -1,0 +1,17 @@
+.app-movies-header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72px;
+  background-color: #3a3e4a;
+}
+
+.app-movies-main-title{
+  font-size: 50px;
+  font-weight: bold;
+  color: #e3e6ef;
+}
+
+.app-movies-header-logo{
+  height: 40px;
+}
