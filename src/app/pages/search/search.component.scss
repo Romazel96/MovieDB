@@ -4,21 +4,7 @@
   align-items: center;
   flex-direction: column;
   margin: 0 150px;
-  background-color: #ada0ae;
   padding: 30px;
-}
-
-.app-movie-form-first-title {
-  font-size: 50px;
-  color: #e3e6ef;
-  margin-bottom: 15px;
-}
-
-.app-movie-form-second-title {
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 15px;
-  color: #e3e6ef;
 }
 
 .app-movie-form-input {
@@ -44,7 +30,6 @@
 .app-movie-form-button {
   min-width: 200px;
   min-height: 50px;
-  margin-top: 25px;
   padding: 10px 20px;
   font-size: 25px;
   color: #3a3e4a;
@@ -53,7 +38,6 @@
   cursor: pointer;
   font-weight: bold;
 }
-
 
 .app-movie-form-button:hover {
   background-color: #3a3e4a;

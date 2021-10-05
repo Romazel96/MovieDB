@@ -1,0 +1,55 @@
+.app-movie-nav-titles {
+  padding: 15px;
+}
+
+.app-movie-nav-first-title {
+  font-size: 50px;
+  color: #3a3e4a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.app-movie-nav-second-title {
+  text-align: center;
+  font-size: 35px;
+  color: #3a3e4a;
+}
+
+.app-movie-main-section {
+  margin: 0 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-movie-main-card {
+  width: 250px;
+  height: 500px;
+  margin: 15px 30px 15px 0;
+  overflow: hidden;
+  border: 3px solid #3a3e4a;
+  cursor: pointer;
+    background-color: #3a3e4a;
+}
+
+.app-movie-card-img {
+  width: 250px;
+  height: 80%;
+}
+
+.app-movie-card-info{
+  padding: 3%;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #abb9b9;
+  font-weight: bold;
+}
+
+.app-movie-card-title{
+  font-size: 18px;
+}

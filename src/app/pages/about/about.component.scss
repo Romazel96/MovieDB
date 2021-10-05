@@ -1,0 +1,61 @@
+.app-movie-about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 150px;
+  max-width: 1620px;
+  padding: 30px 300px;
+
+}
+
+.app-movie-about-first-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #3a3e4a;
+}
+
+.app-movie-about-second-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #3a3e4a;
+}
+
+.aapp-movie-bout-text {
+  text-align: center;
+  color: #3a3e4a;
+}
+
+.app-movie-strongtext {
+  font-weight: bold;
+  color: #3a3e4a;
+}
+
+.app-movie-about-advantages {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 35px;
+  color: #3a3e4a;
+}
+
+.app-movie-about-list {
+  max-width: 750px;
+  list-style: none;
+  color: #3a3e4a;
+}
+
+.app-movie-about-item {
+  display: flex;
+  margin-bottom: 15px;
+
+}
+
+.app-movie-item-number {
+  margin-right: 25px;
+  font-size: 35px;
+  color: #d40242;
+  font-weight: 700;
+}

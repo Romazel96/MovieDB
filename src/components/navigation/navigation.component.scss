@@ -1,0 +1,24 @@
+.app-movie-nav-container {
+background-color: #e3e6ef;
+}
+
+
+
+.app-movie-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-top: 2px solid #3a3e4a;
+}
+
+.app-movie-nav-item {
+  margin-right: 30px;
+  font-size: 25px;
+  color: #3a3e4a;
+  text-decoration: none;
+}
+
+.app-movie-nav-item:hover {
+  color: #abb9b9;
+}
