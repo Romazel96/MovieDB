@@ -20,11 +20,14 @@
 }
 
 .app-movie-contacts-input {
-  width: 500px;
   padding: 15px 25px 15px 25px;
   font-size: 20px;
   border: none;
   border-radius: 35px;
+  margin-bottom: 5px;
+  min-width: 500px;
+  max-width: 750px;
+  min-height: 25px;
 }
 
 .app-movie-contacts-input:focus {

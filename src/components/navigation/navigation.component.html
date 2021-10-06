@@ -1,9 +1,6 @@
 <div class="app-movie-nav-container">
-
   <ul class="app-movie-nav-list">
-    <li><a href="" class="app-movie-nav-item" [routerLink]="['/']">Главная</a></li>
-    <li><a href="" class="app-movie-nav-item" [routerLink]="['/search']">Поиск</a></li>
-    <li><a href="" class="app-movie-nav-item" [routerLink]="['/contacts']">Обратная связь</a></li>
-    <li><a href="" class="app-movie-nav-item" [routerLink]="['/about']">О сервисе</a></li>
+    <li *ngFor="let titleRoute of titlesRoutes" class="app-movie-nav-item"
+        [routerLink]="[titleRoute.route]">{{titleRoute.title}}</li>
   </ul>
 </div>

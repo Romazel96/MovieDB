@@ -9,6 +9,7 @@ import {AppNavigationComponent} from "../components/navigation/navigation.compon
 import {AppMainModule} from "../components/main/main.module";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {HttpClientModule} from "@angular/common/http";
     AppFooterModule,
     AppMainModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

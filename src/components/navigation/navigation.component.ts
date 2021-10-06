@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TAppNavigation} from "./navigation.interface";
+import {TAppNavigation, TitleRoutes} from "./navigation.interface";
 
 @Component({
   selector: 'app-navigation',
@@ -8,6 +8,18 @@ import {TAppNavigation} from "./navigation.interface";
 })
 export class AppNavigationComponent implements OnInit {
   @Input() navigation?: TAppNavigation
+
+  titlesRoutes: TitleRoutes[] = [
+    {title:'Главная',
+      route:'/'},
+    {title:'Поиск',
+      route:'/search'},
+    {title:'Обратная связь',
+      route:'/contacts'},
+    {title:'О нас',
+      route:'/about'}
+    ]
+
 
   constructor() { }
 

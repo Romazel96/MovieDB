@@ -1,6 +1,11 @@
 <div class="app-movies-search-container">
-  <form>
-    <input type='text' value='' placeholder='Найти фильм . . . . . . . .' class="app-movie-form-input">
-    <button class="app-movie-form-button">Найти</button>
-  </form>
+  <input
+    type='text'
+    placeholder='Найти фильм . . . . . . . .'
+    class="app-movie-form-input"
+    [value]="inputValue"
+    (keyup.enter)="onInput($event)">
+
+  <p>{{inputValue}}</p>
+
 </div>

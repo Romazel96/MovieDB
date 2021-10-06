@@ -3,6 +3,7 @@ import {IMovieDbList} from "../../app/api/moviedb.interface";
 import {Subscription} from "rxjs";
 import {AppService} from "../../app/app.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {AppRoutes} from "../../app/router/routes";
 
 @Component({
   selector: 'app-main',
@@ -34,7 +35,9 @@ export class AppMainComponent implements OnInit {
     this.sbs?.unsubscribe();
   }
 
-
+   onShowDetails(id: number): void {
+    this._router.navigate([AppRoutes.movies, id]);
+  }
 
     private _getList(): void {
     this.sbs = this._appSv.getMovieDbList().subscribe(res => {
@@ -42,5 +45,7 @@ export class AppMainComponent implements OnInit {
       console.log(this.data)
     });
   }
+
+
 
 }
