@@ -32,9 +32,8 @@ export class SearchComponent implements OnInit {
 
     this.inputValue = event.target.value
 
-     this.http.get(this._moviesList + this.MOVIEDB_API_KEY + '&query=' + this.inputValue + '&&language=ru-RU')
+     this.http.get<IMovieDbList>(this._moviesList + this.MOVIEDB_API_KEY + '&query=' + this.inputValue + '&&language=ru-RU')
       .subscribe(responce => {
-        // @ts-ignore
         this.data = responce;
         console.log(responce)
       })
