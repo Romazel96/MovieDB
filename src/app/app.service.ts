@@ -8,7 +8,7 @@ const MOVIEDB_API_KEY = 'e5cff0382865b2c20082717f56f4269e';
 
 @Injectable({providedIn: 'root'})
 export class AppService {
-  private _moviesList = `${environment.api.MOVIEDB}/3/discover/movie`;
+  private _moviesList = `${environment.api.MOVIEDB}/3/discover/movie?sort_by=popularity.desc&&language=ru-RU`;
 
   private _defaultParams: IMovieDbQuery = {
     api_key: MOVIEDB_API_KEY,

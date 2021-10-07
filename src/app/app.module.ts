@@ -10,6 +10,10 @@ import {AppMainModule} from "../components/main/main.module";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {CommonModule} from "@angular/common";
+import {SearchModule} from "./pages/search/search.module";
+import {AboutModule} from "./pages/about/about.module";
+import {ContactsModule} from "./pages/contacts/contacts.module";
 
 
 @NgModule({
@@ -18,13 +22,17 @@ import {FormsModule} from "@angular/forms";
     AppNavigationComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppHeaderModule,
     AppFooterModule,
     AppMainModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    SearchModule,
+    AboutModule,
+    ContactsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
