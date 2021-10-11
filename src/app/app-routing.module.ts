@@ -6,8 +6,10 @@ import {ContactsComponent} from "./pages/contacts/contacts.component";
 import {SearchComponent} from "./pages/search/search.component";
 
 const routes: Routes =[
-  {path: '', component: AppMainComponent},
-  {path: 'search', component: SearchComponent},
+  {path: 'movies', component: AppMainComponent,
+  children: [{path: ':id', component:AppMainComponent}]},
+  {path: 'search', component: SearchComponent,
+  children:[{path: ':id', component: SearchComponent}]},
   {path: 'about', component: AboutComponent},
   {path: 'contacts', component: ContactsComponent},
 ]

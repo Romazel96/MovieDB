@@ -29,7 +29,6 @@ export interface IMovieDbListItem {
 
 export interface IMovieDbDetail {
   id: number;
-  imdb_id: string;
   original_language: string;
   original_title: string;
   overview: string;

@@ -11,7 +11,7 @@ export class AppNavigationComponent implements OnInit {
 
   titlesRoutes: TitleRoutes[] = [
     {title:'Главная',
-      route:'/'},
+      route:'movies'},
     {title:'Поиск',
       route:'/search'},
     {title:'Обратная связь',
