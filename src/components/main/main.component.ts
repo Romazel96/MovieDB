@@ -59,12 +59,12 @@ export class AppMainComponent implements OnInit {
 
   getDetail(id: number): void {
     this._router.navigate([AppRoutes.movies, id]);
-    this.http.get<IMovieDbListItem>(this._moviesDetail + id + this.MOVIEDB_API_KEY_DETAIL + '&&language=ru-RU')
-      .subscribe(responceDetail => {
-        this.dataDetail = responceDetail
-        console.log(id)
-        console.log(responceDetail)
-      })
+    // this.http.get<IMovieDbListItem>(this._moviesDetail + id + this.MOVIEDB_API_KEY_DETAIL + '&&language=ru-RU')
+    //   .subscribe(responceDetail => {
+    //     this.dataDetail = responceDetail
+    //     console.log(id)
+    //     console.log(responceDetail)
+    //   })
   }
 
 

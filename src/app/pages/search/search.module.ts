@@ -4,6 +4,7 @@ import { SearchComponent } from './search.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserModule} from "@angular/platform-browser";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -11,11 +12,12 @@ import {BrowserModule} from "@angular/platform-browser";
   declarations: [
     SearchComponent
   ],
-    imports: [
-      BrowserModule,
-        CommonModule,
-        FormsModule,
-      HttpClientModule
-    ]
+  imports: [
+    BrowserModule,
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule
+  ]
 })
 export class SearchModule { }

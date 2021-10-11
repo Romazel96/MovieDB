@@ -4,14 +4,23 @@ import {AppMainComponent} from "../components/main/main.component";
 import {AboutComponent} from "./pages/about/about.component";
 import {ContactsComponent} from "./pages/contacts/contacts.component";
 import {SearchComponent} from "./pages/search/search.component";
+import {DetailComponent} from "../components/main/detail/detail.component";
+import {NotfoundpageComponent} from "./pages/notfoundpage/notfoundpage.component";
 
-const routes: Routes =[
-  {path: 'movies', component: AppMainComponent,
-  children: [{path: ':id', component:AppMainComponent}]},
-  {path: 'search', component: SearchComponent,
-  children:[{path: ':id', component: SearchComponent}]},
+const routes: Routes = [
+  {
+    path: 'movies', component: AppMainComponent, children: [
+      {path: ':id', component: DetailComponent}
+    ]
+  },
+  {
+    path: 'search', component: SearchComponent, children: [
+      {path: ':id', component: DetailComponent}
+    ]
+  },
   {path: 'about', component: AboutComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: '**', component: NotfoundpageComponent}
 ]
 
 @NgModule({
@@ -19,6 +28,4 @@ const routes: Routes =[
   exports: [RouterModule]
 })
 
- export class AppRoutingModule{
-
-}
+export class AppRoutingModule {}

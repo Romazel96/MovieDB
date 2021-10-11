@@ -1,3 +1,4 @@
+  <router-outlet></router-outlet>
 <div class="app-movies-search-container">
   <input
     type='text'
@@ -5,9 +6,11 @@
     class="app-movie-form-input"
     [value]="inputValue"
     (keyup.enter)="onInput($event)">
+
 </div>
 <div class="main">
 <div class="app-movie-main-section">
+
   <div *ngFor="let movie of data?.results" class="app-movie-main-card" (click)="getDetail(movie.id)">
     <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="" class="app-movie-card-img">
     <div class="app-movie-card-info">

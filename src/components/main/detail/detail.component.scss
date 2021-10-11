@@ -1,12 +1,37 @@
-.app-detail {
+.app-movies-details {
+  border: 3px solid black;
   box-sizing: border-box;
   display: block;
-  height: 80vh;
+  height: 750px;
   position: absolute;
-  width: 80vw;
-  background-color: #cccccc;
+  width: 1000px;
+  background-color: #3a3e4a;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
+  color: #abb9b9;
+}
+
+.app-movies-details-flex {
+  display: flex;
+  padding: 30px;
+}
+
+.app-movies-details-list {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 50px;
+}
+
+.app-movies-details-item{
+  margin-bottom: 10px;
+}
+
+.app-movies-details-img {
+  height: 100%;
+  width: 400px;
 }

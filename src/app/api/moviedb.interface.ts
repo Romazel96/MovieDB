@@ -25,11 +25,15 @@ export interface IMovieDbListItem {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  homepage:string,
+  runtime:number,
+  voteaverage: number
 }
 
 export interface IMovieDbDetail {
   id: number;
   original_language: string;
+  title:string,
   original_title: string;
   overview: string;
   popularity: number;

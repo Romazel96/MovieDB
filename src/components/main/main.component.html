@@ -1,11 +1,11 @@
+
 <div class="app-movie-nav-titles">
   <h2 class="app-movie-nav-first-title">Добро пожаловать.</h2>
   <h3 class="app-movie-nav-second-title">Миллионы фильмов, сериалов и людей.<br>Исследуйте сейчас.</h3>
 </div>
 
-
-
 <div class="app-movie-main-section">
+  <router-outlet></router-outlet>
   <div *ngFor="let movie of data?.results" class="app-movie-main-card" (click)="getDetail(movie.id)">
     <img src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}" alt="" class="app-movie-card-img">
     <div class="app-movie-card-info">
@@ -13,5 +13,7 @@
       <p class="app-movie-card-date">({{movie.release_date.slice(0, 4)}})</p>
       <p class="app-movie-card-rating">Рейтинг:  {{movie.vote_average}}</p>
     </div>
+
   </div>
+
 </div>

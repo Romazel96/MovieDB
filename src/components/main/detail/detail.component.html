@@ -1,12 +1,16 @@
-<p>detail works!</p>
-
-
-
-<ng-container *ngIf="dataDetail">
-  <div>{{dataDetail.id}}</div>
-  <br>
-  <div>{{dataDetail.original_title}}</div>
-  <br>
-  <div>{{dataDetail.overview}}</div>
-
-</ng-container>
+<div *ngIf="dataDetail" class="app-movies-details">
+<!--  <button (click)="onClose()">X</button>-->
+  <div class="app-movies-details-flex">
+    <img src="https://image.tmdb.org/t/p/w500/{{dataDetail.poster_path}}" alt="" class="app-movies-details-img">
+    <div class="app-movies-details-info">
+      <ul class="app-movies-details-list">
+        <li class="app-movies-details-item" class="">Название: {{dataDetail.title}}</li>
+        <li class="app-movies-details-item">Оригинально название: {{dataDetail.original_title}}</li>
+        <li class="app-movies-details-item">Дата выхода: {{dataDetail.release_date.slice(0, 4)}}</li>
+        <li class="app-movies-details-item">Рейтинг: {{dataDetail.vote_average}}</li>
+        <li class="app-movies-details-item">Описание: {{dataDetail.overview}}</li>
+        <li class="app-movies-details-item">Домашняя страница: {{dataDetail.homepage}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

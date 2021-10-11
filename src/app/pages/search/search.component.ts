@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, HostListener, OnInit, ViewEncapsulation} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {environment} from "../../../environments/environment";
 import {IMovieDbList, IMovieDbListItem} from "../../api/moviedb.interface";
@@ -42,6 +42,12 @@ export class SearchComponent implements OnInit {
       })
 
 
+  }
+
+
+    @HostListener('document: keydown.escape')
+  onClose(): void {
+    this._router.navigate([AppRoutes.search]);
   }
 
   getDetail(id: number): void {

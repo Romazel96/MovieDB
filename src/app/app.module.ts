@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-
 import {AppComponent} from './app.component';
 import {AppHeaderModule} from "../components/header/header.module";
 import {AppFooterModule} from "../components/footer/footer.module";
@@ -14,6 +13,7 @@ import {CommonModule} from "@angular/common";
 import {SearchModule} from "./pages/search/search.module";
 import {AboutModule} from "./pages/about/about.module";
 import {ContactsModule} from "./pages/contacts/contacts.module";
+import {DetailModule} from "../components/main/detail/detail.module";
 
 
 @NgModule({
@@ -32,9 +32,9 @@ import {ContactsModule} from "./pages/contacts/contacts.module";
     FormsModule,
     SearchModule,
     AboutModule,
-    ContactsModule
+    ContactsModule,
+    DetailModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
