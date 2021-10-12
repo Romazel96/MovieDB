@@ -40,7 +40,6 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.params); // посмотри <<<<----- пусто
     this.route.url.subscribe(dataDetail => this.id = dataDetail[0].path);
     this.route.paramMap.subscribe(params => {
       const id = params.get('id');
@@ -48,7 +47,7 @@ export class DetailComponent implements OnInit {
     });
 
   }
-  
+
    ngOnDestroy(): void {
     this.sbs?.unsubscribe();
   }

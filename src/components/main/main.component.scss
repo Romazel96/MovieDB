@@ -31,6 +31,12 @@
   border: 3px solid #3a3e4a;
   cursor: pointer;
     background-color: #3a3e4a;
+      border-radius: 10px;
+  transition: .1s linear;
+}
+
+.app-movie-main-card:hover{
+   box-shadow: 0 0 0 2px #d40242, 0 0 0 4px #3A2F28;
 }
 
 .app-movie-card-img {

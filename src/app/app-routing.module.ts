@@ -20,7 +20,9 @@ const routes: Routes = [
   },
   {path: 'about', component: AboutComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path:'', redirectTo: '/movies', pathMatch: 'full'},
   {path: '**', component: NotfoundpageComponent}
+
 ]
 
 @NgModule({

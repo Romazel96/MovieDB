@@ -15,19 +15,21 @@ export interface IMovieDbListItem {
   backdrop_path: any;
   genre_ids: any[];
   id: number;
+  imdb_id: string;
   original_language: string;
   original_title: string;
   overview: string;
-  popularity: 0
+  popularity: 0;
   poster_path: any;
   release_date: string;
   title: string;
   video: boolean;
   vote_average: number;
   vote_count: number;
-  homepage:string,
-  runtime:number,
-  voteaverage: number
+  homepage:string;
+  runtime:number;
+  voteaverage: number;
+  genres: []
 }
 
 export interface IMovieDbDetail {

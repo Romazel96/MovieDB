@@ -2,21 +2,24 @@
   border: 3px solid black;
   box-sizing: border-box;
   display: block;
-  height: 750px;
-  position: absolute;
-  width: 1000px;
-  background-color: #3a3e4a;
+  height: 81%;
+  position: fixed;
+  width: 80%;
+  background-color: rgba(58, 62, 74, 0.97);
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  padding: 40px;
   color: #abb9b9;
+  border-radius: 10px;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
 
 .app-movies-details-flex {
   display: flex;
-  padding: 30px;
 }
 
 .app-movies-details-list {
@@ -27,11 +30,23 @@
   margin-left: 50px;
 }
 
-.app-movies-details-item{
-  margin-bottom: 10px;
+.app-movies-details-item {
+  margin-bottom: 15px;
 }
 
 .app-movies-details-img {
   height: 100%;
-  width: 400px;
+  width: 450px;
+  border: 3px solid #d40242;
+  border-radius: 10px;
+}
+
+.app-movies-details-item-title{
+  font-weight: bold;
+}
+
+.app-movies-details-item-imdb{
+  text-decoration: none;
+  color: #d40242;
+  font-weight: bold;
 }
